@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>Welcome to about page</h1>
+	<h1 th:text="${name}"></h1>
+<h1 th:text="${address}"></h1>
+	<div th:with= "a=5,b=77,n=${name}">
+	  <h1>value of a is <span th:text="${a}"></span></h1>
+	  <h1 th:text="'value of b is '+${b}"></h1>
+	  <h3 th:text="'sum of '+${a}+' and '+${b}+' is = ' +${a+b}"></h3>
+	
+	</div>
+	
+	
+	<h1></h1>
+</body>
+</html>
